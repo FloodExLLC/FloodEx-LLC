@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact FloodEx LLC for a free estimate or emergency restoration service. Available 24/7." />
+  <title>Contact Us | FloodEx LLC</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Emergency Bar -->
+  <div class="emergency-bar">
+    ⚡ 24/7 Emergency Response Available &mdash;
+    <a href="tel:+10000000000">Call (000) 000-0000 Now</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-drop">💧</span>
+        FloodEx <span>LLC</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="tel:+10000000000" class="nav-cta">🚨 Emergency Help</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <span>Contact</span>
+      </div>
+      <h1>Get in <span class="accent">Touch</span></h1>
+      <p>Request a free estimate, ask a question, or get emergency help — we're here 24/7.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <div class="contact-info reveal">
+          <h2>Contact <span class="accent">FloodEx LLC</span></h2>
+          <p>
+            Whether you're dealing with an active emergency or planning ahead,
+            we're ready to help. Reach out any way that works best for you.
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+10000000000">(000) 000-0000</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:info@floodexllc.com">info@floodexllc.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <h4>Address</h4>
+                <p>[Street Address]<br />[City, State ZIP]</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div>
+                <h4>Hours</h4>
+                <p>Emergency Line: 24/7<br />Office: Mon–Fri, 8am–6pm</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Emergency Card -->
+          <div class="emergency-card">
+            <h3>🚨 Active Emergency?</h3>
+            <p>Don't fill out a form — call us directly right now.</p>
+            <a href="tel:+10000000000">(000) 000-0000</a>
+            <p style="margin-top: 6px; font-size: 0.82rem;">We answer 24 hours a day, 7 days a week.</p>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrapper reveal">
+          <h2>Request a Free Estimate</h2>
+          <p>Fill out the form below and a FloodEx specialist will contact you within 1 business hour.</p>
+
+          <!-- Success Message -->
+          <div class="form-success" id="formSuccess">
+            <div style="font-size: 3rem; margin-bottom: 16px;">✅</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. A FloodEx specialist will contact you shortly.</p>
+            <p style="margin-top: 12px;">For immediate assistance, call <a href="tel:+10000000000">(000) 000-0000</a>.</p>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" required />
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label for="address">Property Address</label>
+              <input type="text" id="address" name="address" placeholder="123 Main St, City, State" />
+            </div>
+
+            <div class="form-group full">
+              <label for="service">Type of Damage *</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="water">Water Damage Restoration</option>
+                <option value="fire">Fire &amp; Smoke Damage</option>
+                <option value="mold">Mold Remediation</option>
+                <option value="storm">Storm Damage Repair</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label for="urgency">How Urgent Is This?</label>
+              <select id="urgency" name="urgency">
+                <option value="" disabled selected>Select urgency level...</option>
+                <option value="emergency">Emergency — Needs immediate response</option>
+                <option value="urgent">Urgent — Within 24 hours</option>
+                <option value="soon">Soon — Within a few days</option>
+                <option value="estimate">Just getting an estimate</option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label for="message">Describe the Damage *</label>
+              <textarea id="message" name="message" placeholder="Please describe what happened, the affected areas, and any other details that might be helpful..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Send My Request</button>
+            <p class="form-note">* Required fields. We never share your information with third parties.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Contact Us -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>What Happens When You Call</h2>
+        <div class="divider"></div>
+        <p>Here's exactly what to expect after you reach out to FloodEx.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <div class="process-num">1</div>
+          <h3>Immediate Response</h3>
+          <p>You'll speak with a real person — not a machine — who will listen and assess your situation.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-num">2</div>
+          <h3>Dispatch &amp; Arrival</h3>
+          <p>For emergencies, a crew is dispatched immediately. For estimates, we schedule at your convenience.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-num">3</div>
+          <h3>Free Assessment</h3>
+          <p>Our technician inspects the damage and provides a thorough, honest assessment at no charge.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-num">4</div>
+          <h3>Clear Plan &amp; Quote</h3>
+          <p>You receive a clear scope of work and transparent pricing before any work begins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-drop">💧</span>
+            FloodEx <span>LLC</span>
+          </a>
+          <p>Professional restoration services available 24/7. We restore your property and your peace of mind.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Facebook">f</a>
+            <a href="#" class="social-btn" aria-label="Instagram">in</a>
+            <a href="#" class="social-btn" aria-label="Google">G</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#water">Water Damage</a></li>
+            <li><a href="services.html#fire">Fire &amp; Smoke</a></li>
+            <li><a href="services.html#mold">Mold Remediation</a></li>
+            <li><a href="services.html#storm">Storm Damage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="about.html#certifications">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>
+            📞 <a href="tel:+10000000000">(000) 000-0000</a><br /><br />
+            ✉️ <a href="mailto:info@floodexllc.com">info@floodexllc.com</a><br /><br />
+            📍 [Your City, State ZIP]
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 FloodEx LLC. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
